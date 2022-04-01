@@ -1,4 +1,3 @@
-:- use_module(library(semweb/rdf_db)).
 :- use_module(library(lists)).
 
 % 9
@@ -72,10 +71,10 @@ process_new_entry(3) :- % female
     writeln("Enter name: "), read(Name),
     assert(female(Name)),
     append_to_db.
-process_new_entry(4) :- % back
+process_new_entry(0) :- % back
     main.
 process_new_entry(X) :- % unknown
-    X=X, write("Unknown option: "), writeln(X), append_to_db.
+    write("Unknown option: "), writeln(X), append_to_db.
 
 % saving the db
 save_db :-
