@@ -1,0 +1,52 @@
+:- dynamic female/1.
+
+
+female("Evdokia").
+female("Valentyna").
+female("Aryna").
+female("Olga").
+female("Iryna").
+female("Natalia").
+female("Yulia").
+female("Daria").
+female("Anastasia").
+
+:- dynamic male/1.
+
+male("Aphanasiy").
+male("Serhii").
+male("Volodymyr").
+male("Yuryi").
+male("Maxim").
+male("Mykhailo").
+male("Aleksiy").
+male("Denis").
+male("Dmytro").
+male("Illya").
+
+:- dynamic parent/2.
+
+parent("Evdokia", "Aryna").
+parent("Aphanasiy", "Aryna").
+parent("Valentyna", "Olga").
+parent("Serhii", "Olga").
+parent("Valentyna", "Iryna").
+parent("Serhii", "Iryna").
+parent("Valentyna", "Yuryi").
+parent("Serhii", "Yuryi").
+parent("Valentyna", "Maxim").
+parent("Serhii", "Maxim").
+parent("Aryna", "Natalia").
+parent("Volodymyr", "Natalia").
+parent("Mykhailo", "Denis").
+parent("Olga", "Denis").
+parent("Mykhailo", "Dmytro").
+parent("Olga", "Dmytro").
+parent("Iryna", "Yulia").
+parent("Aleksiy", "Yulia").
+parent("Iryna", "Daria").
+parent("Aleksiy", "Daria").
+parent("Maxim", "Illya").
+parent("Natalia", "Illya").
+parent("Maxim", "Anastasia").
+parent("Natalia", "Anastasia").
