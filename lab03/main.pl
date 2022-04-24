@@ -78,7 +78,7 @@ min_dist([[A, B] | Tail], City, Dist) :-
        (B < Dist2 -> City = [A], Dist = [B] ; City = [City2], Dist = [Dist2]), !.
 
 path(A,B,Path,Len) :-
-       travel(A,B,[A],Q,Len), 
+       travel(A,B,[A],Q,Len),
        reverse(Q,Path).
 
 travel(A,B,P,[B|P],L) :- 
